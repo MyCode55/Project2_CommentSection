@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Section with Email Validation & Local Storage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leave a Comment</h1>
+
+        <!-- Comment Form -->
+        <form id="comment-form" class="comment-form">
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="comment" rows="4" placeholder="Write your comment..." required></textarea>
+            <button type="submit" class="btn">Post Comment</button>
+        </form>
+
+        <!-- Comments Section -->
+        <div id="comments-section" class="comments-section">
+            <h2>Comments</h2>
+            <div id="comment-list" class="comment-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
